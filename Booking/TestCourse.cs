@@ -26,6 +26,12 @@ namespace Booking
         {
             Assert.Equal("Glasgow", _sut.Town);
         }
+
+        [Fact]
+        public void canHaveRating()
+        {
+            Assert.Equal(4, _sut.StarRating);
+        }
     }
     
     
