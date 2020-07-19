@@ -1,3 +1,5 @@
+using System.Net;
+using System.Runtime.CompilerServices;
 using System.Security.Cryptography;
 using Xunit;
 
@@ -17,6 +19,12 @@ namespace Booking
         public void canHaveName()
         {
             Assert.Equal("Java", _sut.Name);
+        }
+
+        [Fact]
+        public void canHaveTown()
+        {
+            Assert.Equal("Glasgow", _sut.Town);
         }
     }
     
