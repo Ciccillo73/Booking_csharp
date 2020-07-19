@@ -18,7 +18,11 @@ namespace Booking
             get => _date;
             set => _date = value;
         }
-        
+
+        public int getCustomerList()
+        {
+            return _customers.Count;
+        }
         
     }
 }
